@@ -14,17 +14,17 @@ download PHPTALExtension and set to this directory and finally the path of this 
 
 Then PHPTAL library is set to ./vendor/phptal directory and PHPTAL templates is set under views directory.
 
-/project_directory
-│  ├── .htaccess
-│  ├── silex.phar
-│  └── index.php
-├── src
-│   └── Silex
-│       └── Extension
-│           └── PHPTALExtension.php
-├── vendor
-└── views
-    └── teset.html (PHPTAL template files is set here)
+    /project_directory
+    │  ├── .htaccess
+    │  ├── silex.phar
+    │  └── index.php
+    ├── src
+    │   └── Silex
+    │       └── Extension
+    │           └── PHPTALExtension.php
+    ├── vendor
+    └── views
+        └── teset.html (PHPTAL template files is set here)
 
 ## Sample Code
 
