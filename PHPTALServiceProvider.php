@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Silex\Extension;
+namespace Silex\Provider;
 
 use Silex\Application;
-use Silex\ExtensionInterface;
+use Silex\ServiceProviderInterface;
 
-class PHPTALExtension implements ExtensionInterface
+class PHPTALServiceProvider implements ServiceProviderInterface
 {
     public function register(Application $app)
     {

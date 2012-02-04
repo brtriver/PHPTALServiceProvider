@@ -10,7 +10,7 @@ make directries below:
 $ mkdir -p ./src/Silex/Extension/
 
 download PHPTALExtension and set to this directory and finally the path of this extension is below:
-./src/Silex/Extension/PHPTALExtension.php
+./src/Silex/Provider/PHPTALServiceProvider.php
 
 Then PHPTAL library is set to ./vendor/phptal directory and PHPTAL templates is set under views directory.
 
@@ -20,15 +20,15 @@ Then PHPTAL library is set to ./vendor/phptal directory and PHPTAL templates is 
     │  └── index.php
     ├── src
     │   └── Silex
-    │       └── Extension
-    │           └── PHPTALExtension.php
+    │       └── Provider
+    │           └── PHPTALServiceProvider.php
     ├── vendor
     └── views
         └── teset.html (PHPTAL template files is set here)
 
 ## Sample Code
 
-in index.php, you require this PHPTALExtension file and register it, then your code is like below:
+in index.php, you require this PHPTALServiceProvider file and register it, then your code is like below:
 
 ### index.php
 After calling register method, $app['phptal'] is a instance of PHPTAL. You can use it as PHPTAL itself.
@@ -36,9 +36,9 @@ You have to set a template path first.
 
     <?php
     require_once __DIR__.'/silex.phar';
-    require_once __DIR__.'/src/Silex/Extension/PHPTALExtension.php';
+    require_once __DIR__.'/src/Silex/Provider/PHPTALServiceProvider.php';
 
-    use Silex\Extension\PHPTALExtension;
+    use Silex\Provider\PHPTALExtension;
 
     $app = new Silex\Application();
     $app->register(new PHPTALExtension());
@@ -86,5 +86,5 @@ You have to set a template path first.
 PHPTALExtension is licensed under the MIT license.
 
 [1]: http://phptal.org/manual/en/split/introduction.html
-[2]: http://silex-project.org/
+[2]: http://silex.sensiolabs.org/
 [3]: http://symfony.com
