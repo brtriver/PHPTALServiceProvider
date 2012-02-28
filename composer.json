@@ -12,25 +12,8 @@
             "homepage": "http://1ms.jp/"
         }
     ],
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "pornel/PHPTAL",
-                "version": "1.2.2",
-                "dist": {
-                    "url": "http://phptal.org/files/PHPTAL-1.2.2.zip",
-                    "type": "zip"
-                },
-                "source": {
-                    "url": "https://github.com/pornel/PHPTAL.git",
-                    "type": "git",
-                    "reference": "Release 1.2.2"
-                }
-            }
-        }
-    ],
     "require": {
-        "pornel/PHPTAL": "1.2.2"
+        "silex/silex": "1.0-dev",
+        "php": ">=5.3.2"
     }
 }
