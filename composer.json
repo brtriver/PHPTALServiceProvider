@@ -1,0 +1,18 @@
+{
+    "name": "brtriver/PHPTALServiceProvider",
+    "type": "library",
+    "description": "PHPTAL for Silex",
+    "keywords": ["silex","template"],
+    "homepage": "http://github.com/brtriver/PHPTalServiceProvider",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Masao Maeda",
+            "email": "brt.river@gmail.com",
+            "homepage": "http://1ms.jp/"
+        }
+    ],
+    "config": {
+        "vendor-dir": "src/Silex/Provider/"
+    }
+}
