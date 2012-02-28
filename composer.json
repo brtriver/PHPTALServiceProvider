@@ -13,7 +13,6 @@
         }
     ],
     "require": {
-        "silex/silex": "1.0-dev",
         "php": ">=5.3.2"
     }
 }
