@@ -31,4 +31,7 @@ class PHPTALServiceProvider implements ServiceProviderInterface
             $app['autoloader']->registerPrefix('PHPTAL', __DIR__.'/../../../vendor/phptal');
         }
     }
+    public function boot(Application $app)
+    {
+    }
 }
